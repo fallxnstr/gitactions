@@ -1,6 +1,7 @@
 import os
 import subprocess
 import winreg
+
 from kivy.app import App
 from kivy.config import Config
 from kivy.lang import Builder
@@ -10,6 +11,7 @@ from kivy.uix.button import Button
 from kivy.uix.gridlayout import GridLayout
 from kivy.properties import StringProperty, BooleanProperty
 from kivy.uix.widget import Widget
+
 Config.set("graphics", "resizable", "0")
 Config.set("graphics", "width", "800")
 Config.set("graphics", "height", "600")
@@ -33,11 +35,11 @@ class WidgetEx(GridLayout):
 
         subprocess.call(
                     [
-                            "powercfg",
-                            "-changename",
-                            "11111111-1111-1111-1111-111111111111",
-                            "Powerplan",
-                            "Optimized for the best performance",
+                               "powercfg",
+                               "-changename",
+                               "11111111-1111-1111-1111-111111111111",
+                               "Powerplan",
+                               "Optimized for the best performance",
             ]
         )
 
