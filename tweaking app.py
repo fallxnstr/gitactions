@@ -9,7 +9,6 @@ from kivy.properties import BooleanProperty, StringProperty
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 from kivy.uix.gridlayout import GridLayout
-from kivy.properties import StringProperty, BooleanProperty
 from kivy.uix.widget import Widget
 
 Config.set("graphics", "resizable", "0")
